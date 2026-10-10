@@ -159,7 +159,7 @@ export default function App() {
             {files.slice(3).map((file) => <button className={activeFile === file.id ? 'selected' : ''} type="button" key={file.id} onClick={() => jumpTo(file.id)}><FileIcon ext={file.ext} />{file.label}</button>)}
           </div>
           <div className="explorer-focus"><div className="explorer-subtitle">RESEARCH FOCUS</div><div className="focus-tags">{profile.focus.map((tag) => <button type="button" key={tag} onClick={() => { setCategory('All'); setQuery(tag); jumpTo('projects'); }}>{tag}</button>)}</div></div>
-          <div className="explorer-profile"><span className="mini-avatar">{profile.initials}</span><span><strong>{profile.name}</strong><small>{profile.role}</small></span></div>
+          <div className="explorer-profile"><img className="mini-avatar" src="/profile.jpg" alt="" /><span><strong>{profile.name}</strong><small>{profile.role}</small></span></div>
         </aside>
 
         <main className="editor-pane">
@@ -175,7 +175,10 @@ export default function App() {
           </nav>
 
           <section className="code-section about-section" id="about">
-            <SectionHeading eyebrow="profile" title={profile.name} file="README.md" />
+            <div className="profile-intro">
+              <img className="profile-avatar" src="/profile.jpg" alt={`${profile.name} profile`} />
+              <SectionHeading eyebrow="profile" title={profile.name} file="README.md" />
+            </div>
             <div className="code-lines"><span className="line-no">1</span><p><span className="token-key">const</span> role = <span className="token-string">"{profile.role}"</span>;</p><span className="line-no">2</span><p><span className="token-key">const</span> program = <span className="token-string">"{profile.program}"</span>;</p><span className="line-no">3</span><p className="bio-line">{profile.bio}</p></div>
           </section>
 
