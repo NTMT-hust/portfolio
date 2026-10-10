@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Nguyen Tran Minh Tri',
   initials: 'NT',
-  role: 'AI Engineer / Data Scientist /Bioinformatician',
+  role: 'AI Engineer / Data Scientist / Bioinformatician',
   program: 'Data Science & AI · HUST · English-taught',
   email: 'nguyentri050206@gmail.com',
   github: 'https://github.com/NTMT-hust',
