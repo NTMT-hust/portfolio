@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Nguyen Tran Minh Tri',
   initials: 'NT',
-  role: 'K69 · AI Engineer / Data Scientist',
+  role: 'AI Engineer / Data Scientist /Bioinformatician',
   program: 'Data Science & AI · HUST · English-taught',
   email: 'nguyentri050206@gmail.com',
   github: 'https://github.com/NTMT-hust',
@@ -73,7 +73,7 @@ export const experience = [
 ];
 
 export const education = [
-  { title: 'B.S. in Data Science and Artificial Intelligence', school: 'School of Information and Communication Technology · Hanoi University of Science and Technology · English-taught program', date: '2024 — 2028', detail: 'GPA 3.55 / 4.0 · K69' },
+  { title: 'B.S. in Data Science and Artificial Intelligence', school: 'School of Information and Communication Technology · Hanoi University of Science and Technology · English-taught program', date: '2024 — 2028', detail: 'GPA 3.55 / 4.0 ' },
   { title: 'High School Diploma, Physics Specialization', school: 'HUS High School for Gifted Students, VNU', date: 'Sep 2021 — May 2024', detail: 'Grade 9.9 / 10.0' },
   { title: 'IELTS', school: 'English language certificate · Overall band 6.5', date: 'Dec 2023', detail: '' },
 ];
